@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230525 15:49:41.011" rpa="false" schemaversion="3">
+<suite id="s1" name="Mesesdoano" source="C:\Users\andre.cosolin\Documents\André\ProjetoEstudoAutomacao\VariaveisEscoposArgumentos\mesesdoano.robot">
+<test id="s1-t1" name="Caso de teste Exercicio 01" line="11">
+<kw name="Meses do ano">
+<kw name="Log To Console" library="BuiltIn">
+<arg>@{MESES_ANO}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20230525 15:49:41.036" level="FAIL">Keyword 'BuiltIn.Log To Console' expected 1 to 4 arguments, got 12.</msg>
+<status status="FAIL" starttime="20230525 15:49:41.035" endtime="20230525 15:49:41.036"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>mês do meu aniverário: @{MESES_ANO[6]} do ano de: 1992</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230525 15:49:41.036" endtime="20230525 15:49:41.036"/>
+</kw>
+<status status="FAIL" starttime="20230525 15:49:41.035" endtime="20230525 15:49:41.036"/>
+</kw>
+<status status="FAIL" starttime="20230525 15:49:41.035" endtime="20230525 15:49:41.036">Keyword 'BuiltIn.Log To Console' expected 1 to 4 arguments, got 12.</status>
+</test>
+<doc>Exercicio de variaveis sobre meses do ano</doc>
+<status status="FAIL" starttime="20230525 15:49:41.012" endtime="20230525 15:49:41.036"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Mesesdoano">Mesesdoano</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

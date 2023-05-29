@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230526 11:00:09.239" rpa="false" schemaversion="3">
+<suite id="s1" name="Exercicio5Arguments" source="C:\Users\andre.cosolin\Documents\André\ProjetoEstudoAutomacao\VariaveisEscoposArgumentos\exercicio5arguments.robot">
+<test id="s1-t1" name="Gerar um e-mail customizado" line="15">
+<kw name="Criando e-mail personalizado">
+<var>${E_MAIL_CRIADO}</var>
+<arg>${NOMEFAKE}</arg>
+<arg>${SOBRENOMEFAKE}</arg>
+<kw name="Generate Random String" library="String">
+<var>${PALAVRA_ALEATORIA}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20230526 11:00:09.918" level="INFO">${PALAVRA_ALEATORIA} = P7tjGnCm</msg>
+<status status="PASS" starttime="20230526 11:00:09.918" endtime="20230526 11:00:09.918"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${E-MAIL_CRIADO}</var>
+<arg>${NOME}${SOBRENOME}${PALAVRA_ALEATORIA}${E-MAIL}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230526 11:00:09.918" level="INFO">${E-MAIL_CRIADO} = FakerLibrary.First NameFakerLibrary.Last NameP7tjGnCm@testerobot.com</msg>
+<status status="PASS" starttime="20230526 11:00:09.918" endtime="20230526 11:00:09.918"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>E-mail personalizado: ${E-MAIL_CRIADO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230526 11:00:09.918" endtime="20230526 11:00:09.919"/>
+</kw>
+<msg timestamp="20230526 11:00:09.919" level="INFO">${E_MAIL_CRIADO} = FakerLibrary.First NameFakerLibrary.Last NameP7tjGnCm@testerobot.com</msg>
+<status status="PASS" starttime="20230526 11:00:09.917" endtime="20230526 11:00:09.919"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${E_MAIL_CRIADO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230526 11:00:09.919" endtime="20230526 11:00:09.919"/>
+</kw>
+<status status="PASS" starttime="20230526 11:00:09.917" endtime="20230526 11:00:09.920"/>
+</test>
+<doc>keyword, onde ela nos produzirá um e-mail customizado</doc>
+<status status="PASS" starttime="20230526 11:00:09.241" endtime="20230526 11:00:09.920"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio5Arguments">Exercicio5Arguments</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
